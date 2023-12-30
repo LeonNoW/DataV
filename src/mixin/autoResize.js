@@ -76,7 +76,7 @@ export default {
 
     autoResizeMixinInit()
   },
-  beforeDestroy () {
+  beforeUnmount () {
     const { unbindDomResizeCallback } = this
 
     unbindDomResizeCallback()

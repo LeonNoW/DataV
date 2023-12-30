@@ -216,9 +216,11 @@ export default {
   },
   watch: {
     config () {
-      const { mergeConfig } = this
+      const { initWH, mergeConfig } = this
 
       mergeConfig()
+
+      initWH()
     }
   },
   methods: {
